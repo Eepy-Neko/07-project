@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Digital Art Crash Course is a resource for beginning digital artists to learn how they can get into it"/>
+    <meta name="author" content="Nora Loertscher"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Digital Art Crash Course: Where to Start</title>
+
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- start the page header -->
+    <header>
+        <span>Digital Art Crash Course</span>
+    </header>
+    
+    <!-- start the page navigation -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Overview</a></li>
+            <li><a href="hardwareandsoftware.html">Hardware & Software</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li class="active"><a href="questions.html">Questions</a></li>
+        </ul>
+    </nav>
+    
+    <!-- start the page main -->
+    <main>
+        <h1>Questions</h1>
+
+        <form method="get" action="thanks.html" class="questionForm">
+            <fieldset>
+                <legend>Personal Information</legend>
+
+                <label>
+                    First Name*<input type="text" name="fname" required>
+                </label>
+
+                <label>
+                    Last Name*<input type="text" name="lname" required>
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Question Topic</legend>
+
+                <label>
+                    <input type="radio" name="qtype" value="starting">Getting Started
+                </label>
+
+                <label>
+                    <input type="radio" name="qtype" value="hardware">Hardware
+                </label>
+
+                <label>
+                    <input type="radio" name="qtype" value="sofware">Software
+                </label>
+
+                <label>
+                    <input type="radio" name="qtype" value="none">None of the above
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Questions</legend>
+
+                <label>If your question is about a specific drawing program, please select it below
+                    <select name="program">
+                        <option value="none">Please select</option>
+                        <option value="clip">Clip Studio Paint</option>
+                        <option value="krita">Krita</option>
+                        <option value="photoshop">Photoshop</option>
+                        <option value="procreate">Procreate</option>
+                        <option value="other">Other</option>
+                    </select>
+                </label>
+
+                <label>
+                    Question(s)*<textarea name="questions" required></textarea>
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Contact Method</legend>
+
+                <label>
+                    Email<input type="email" name="email">
+                </label>
+
+                <label>
+                    Phone Number<input type="tel" name="phone">
+                </label>
+
+                <label>
+                    <input type="checkbox" name="response" value="email">Email
+                </label>
+
+                <label>
+                    <input type="checkbox" name="response" value="text">Text Message
+                </label>
+
+                <label>
+                    <input type="checkbox" name="response" value="call">Phone Call
+                </label>
+            </fieldset>
+
+            <input type="submit" value="Send Question">
+        </form>
+
+    </main>
+    
+    <!-- start the page footer -->
+    <footer>
+        <p>&copy; 2026 Digital Art Crash Course &bull; Nora Loertscher &bull; Web Essentials</p>
+    </footer>
+</body>
+</html>

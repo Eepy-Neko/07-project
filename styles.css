@@ -1,0 +1,222 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Nunito", sans-serif;
+    margin: 0;
+}
+
+header{
+    background-color: #007bb5;
+    padding: 1rem 10px;
+}
+
+header span{
+    font-weight: 675;
+    font-size: 1.4rem;
+    color: #0009b5;
+}
+
+@media only screen and (min-width: 601px){
+    nav {
+        background-color: #6d00b5;
+    }
+
+    nav ul{
+        margin: 0;
+        list-style-type: none;
+        display: flex;
+        padding: 2px 10px;
+    }
+
+    nav a{
+        text-decoration: none;
+        display: block;
+        color: #007bb5;
+        padding-left: 1.5rem;
+        font-size: 2rem;
+        font-weight: 650;
+    }
+
+    nav a:hover{
+        color: #0009b5;
+    }
+
+    nav li.active a{
+        color: #0009b5;
+    }
+}
+
+@media only screen and (max-width: 600){
+    nav{
+        background-color: #6d00b5;
+    }
+
+    nav ul{
+        margin: 0;
+    }
+
+    nav a{
+        text-decoration: none;
+        display: block;
+        
+    }
+}
+
+/* main */
+
+main{
+    padding: 0 10px;
+}
+
+main h1{
+    color: #3200b5;
+}
+
+main h2{
+    color: #0042b5;
+}
+
+main ul{
+    list-style-type: circle;
+}
+
+main p{
+    margin: 0;
+    color: #120024;
+}
+
+main a{
+    text-decoration: none;
+    color: #0042b5;
+}
+
+main a:hover{
+    color: #3200b5;
+}
+
+main li{
+    color: #120024;
+}
+
+main ol li{
+    padding-bottom: 5px;
+}
+
+main dl{
+    padding-left: .8rem;
+}
+
+main dl dt{
+    font-size: 1.1rem;
+    color: #007bb5;
+}
+
+main dl dd{
+    padding-bottom: 8px;
+    color: #120024;
+    font-size: .93rem;
+}
+
+main address{
+    background-color: #007bb5;
+    border-radius: 5px;
+    border-style: dotted;
+    border-color: #6d00b5;
+    margin-bottom: .6rem;
+}
+
+main address a{
+    color: #3200b5;
+}
+
+main address a:hover{
+    color: #6d00b5;
+}
+
+figure.home{
+    margin: 0;
+    float: right;
+    width: 35%;
+    height: auto;
+}
+
+figure img{
+    width: 100%;
+    height: auto;
+}
+
+figure figcaption{
+    text-align: center;
+    font-size: .9rem;
+    color: #007bb5;
+}
+
+div.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px 50px;
+}
+
+div.gallery figure{
+    margin: 0;
+    width: 30%;
+    height: auto;
+}
+
+.questionForm label, .questionForm [type=text], .questionForm [type=tel], .questionForm [type=email], .questionForm textarea, .questionForm select, .questionForm [type=submit]{
+    margin: .5rem;
+    display: block;
+    color: #120024;
+    font-family: "Nunito", sans-serif;
+}
+
+.questionForm [type=text], .questionForm [type=tel], .questionForm [type=email], .questionForm textarea, .questionForm select{
+    background-color: #d7b9ff49;
+    border: 1px solid #3200b5;
+    border-radius: 5px;
+    width: 225px;
+}
+
+.questionForm fieldset{
+    border: 2px solid #007bb5;
+    border-radius: 5px;
+    margin-bottom: 1.2rem;
+}
+
+.questionForm legend{
+    color: #007bb5;
+}
+
+.questionForm textarea{
+    height: 5rem;
+}
+
+.questionForm [type=submit]{
+    padding: 10px;
+    color: #6d00b5;
+    background-color: #007bb5;
+    border: 2px solid #3200b5;
+    border-radius: 5px;
+    margin: 0 0 1rem 1vw;
+    font-size: .9rem;
+}
+
+footer{
+    background-color: #0009b5;
+    padding: .5rem 0;
+    clear: both;
+}
+
+footer p{
+    text-align: center;
+    color: #007bb5;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+header, nav, main, footer{
+    max-width: 60rem;
+    margin: 0 auto;
+}
