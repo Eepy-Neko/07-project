@@ -217,7 +217,7 @@ div.gallery img:hover{
 }
 
 footer{
-    background-color: #0009b5;
+    background-image: linear-gradient(to top, #0009b5, #6d00b5);
     padding: .5rem 0;
     clear: both;
 }
